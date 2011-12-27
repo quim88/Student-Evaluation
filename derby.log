@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Tue Dec 27 03:43:44 EST 2011:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.2.2 - (1181258): instance a816c00e-0134-7eb0-81b3-000000ed7638 
+on database directory /home/quim/workspace/Student-Evaluation/cs455_jcosta  with class loader sun.misc.Launcher$AppClassLoader@d9f9c3 
+Loaded from file:/etc/db-derby-10.8.2.2-bin/lib/derby.jar
+java.vendor=Sun Microsystems Inc.
+java.runtime.version=1.6.0_23-b23
+user.dir=/home/quim/workspace/Student-Evaluation
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
