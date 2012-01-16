@@ -32,7 +32,7 @@ public class SchoolCourseDialog extends AppDialog implements ActionListener
 {
 	private final String ADD = "Add";
 	private JTextField _name;
-	private JComboBox _code;
+	private JComboBox<String> _code;
 	private JSpinner _number;
 	private JSpinner _unit;
 	
@@ -81,7 +81,7 @@ public class SchoolCourseDialog extends AppDialog implements ActionListener
 		this.add(_name, 1, 0);
 
 		// setup code combobox
-		_code = new JComboBox();
+		_code = new JComboBox<String>();
 		_code.setPreferredSize(new Dimension(200, 25));
 		this.add(_code, 1, 1);
 		this.syncProgramCode();

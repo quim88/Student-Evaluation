@@ -34,8 +34,8 @@ public class StudentDialog extends AppDialog implements ActionListener
 	private int _userId;
 	private JTextField _firstName;
 	private JTextField _lastName;
-	private JComboBox _major;
-	private JComboBox _studentType;
+	private JComboBox<String> _major;
+	private JComboBox<String> _studentType;
 	private JSpinner _gradYear;
 	private JButton _actionBtn;
 	private String _activeAction;
@@ -96,12 +96,12 @@ public class StudentDialog extends AppDialog implements ActionListener
 		this.add(_lastName, 1, 1);
 
 		// setup major combobox
-		_major = new JComboBox(majorStr);
+		_major = new JComboBox<String>(majorStr);
 		_major.setPreferredSize(new Dimension(200, 25));
 		this.add(_major, 1, 2);
 
 		// setup student type combobox
-		_studentType = new JComboBox(studentTypeStr);
+		_studentType = new JComboBox<String>(studentTypeStr);
 		_studentType.setPreferredSize(new Dimension(200, 25));
 		this.add(_studentType, 1, 3);
 

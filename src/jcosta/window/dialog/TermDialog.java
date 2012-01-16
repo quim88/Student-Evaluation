@@ -25,7 +25,7 @@ public class TermDialog extends AppDialog implements ActionListener
 	private final Dimension SIZE = new Dimension(300,100);
 	private final String ADD = "Add";
 	
-	private JComboBox _semester;
+	private JComboBox<String> _semester;
 	private JSpinner _year;
 	private JButton _actionBtn;
 
@@ -65,7 +65,7 @@ public class TermDialog extends AppDialog implements ActionListener
 		}
 
 		// setup major combobox
-		_semester = new JComboBox(semesterStr);
+		_semester = new JComboBox<String>(semesterStr);
 		_semester.setPreferredSize(new Dimension(200, 25));
 		this.add(_semester, 1, 0);
 

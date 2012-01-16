@@ -60,7 +60,7 @@ public class MenuAction implements ActionListener
 	private void setUserId( ActionEvent e)
 	{
 		//AppWindow.USER = 
-		JComboBox st = (JComboBox) e.getSource();
+		JComboBox<String> st = (JComboBox) e.getSource();
 		String user = st.getSelectedItem().toString();
 		user = user.substring(user.lastIndexOf(',')+2);
 		

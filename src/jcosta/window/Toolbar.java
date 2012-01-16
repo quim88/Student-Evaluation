@@ -51,7 +51,7 @@ public class Toolbar extends JPanel
 	private JButton _addSchoolCourseBtn;
 	private JButton _addProgramBtn;
 	private JButton _addTermBtn;
-	private JComboBox _studentList;
+	private JComboBox<String> _studentList;
 	
 	
 	public Toolbar(AppWindow parentFrame)
@@ -73,7 +73,7 @@ public class Toolbar extends JPanel
 		_addTermBtn = createIconButton("Add Term", ADD_TERM_ICON, "Add semester Term", MenuAction.ADD_TERM);		
 		
 		// setup the student list
-		_studentList = new JComboBox();
+		_studentList = new JComboBox<String>();
 		_studentList.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 20));
 		_studentList.addActionListener(new MenuAction(_parent));
 		_studentList.setActionCommand(MenuAction.CHANGED_STUDENT);

@@ -23,13 +23,13 @@ public class StudentCourseDialog extends AppDialog implements ActionListener
 {
 	private final Dimension SIZE = new Dimension(300, 250);
 	private final String ADD = "Add";
-	private JComboBox _code;
-	private JComboBox _number;
-	private JComboBox _semester;
-	private JComboBox _year;
+	private JComboBox<String> _code;
+	private JComboBox<Integer> _number;
+	private JComboBox<String> _semester;
+	private JComboBox<Integer> _year;
 	private JSpinner _unit;
-	private JComboBox _grade;
-	private JComboBox _taken;
+	private JComboBox<String> _grade;
+	private JComboBox<String> _taken;
 
 	private JButton _actionBtn;
 
@@ -72,19 +72,19 @@ public class StudentCourseDialog extends AppDialog implements ActionListener
 		}
 
 		// setup code combobox
-		_code = new JComboBox();
+		_code = new JComboBox<String>();
 		_code.setPreferredSize(new Dimension(200, 25));
 		this.add(_code, 1, 0);
 		
-		_number = new JComboBox();
+		_number = new JComboBox<Integer>();
 		_number.setPreferredSize(new Dimension(200, 25));
 		this.add(_number, 1, 1);
 		
-		_semester = new JComboBox(semesterStr);
+		_semester = new JComboBox<String>(semesterStr);
 		_semester.setPreferredSize(new Dimension(200, 25));
 		this.add(_semester, 1, 2);
 		
-		_year = new JComboBox();
+		_year = new JComboBox<Integer>();
 		_year.setPreferredSize(new Dimension(200, 25));
 		this.add(_year, 1, 3);
 
@@ -94,12 +94,12 @@ public class StudentCourseDialog extends AppDialog implements ActionListener
 		this.add(_unit, 1, 4);
 
 		// setup grade
-		_grade = new JComboBox(gradeSTr);
+		_grade = new JComboBox<String>(gradeSTr);
 		_grade.setPreferredSize(new Dimension(200, 25));
 		this.add(_grade, 1, 5);
 
 		// setup taken
-		_taken = new JComboBox(takenStr);
+		_taken = new JComboBox<String>(takenStr);
 		_taken.setPreferredSize(new Dimension(200, 25));
 		this.add(_taken, 1, 6);
 
